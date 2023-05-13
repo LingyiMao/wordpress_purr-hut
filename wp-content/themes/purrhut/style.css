@@ -1,0 +1,921 @@
+/*
+Theme Name: Purr Hut
+*/
+
+:root {
+  --menu-font: "Ubuntu", sans-serif;
+  --content-font: "Ubuntu Condensed", sans-serif;
+  --title-font: "Poppins", sans-serif;
+  --subtitle-font: "Ubuntu Mono", monospace;
+  --header-color: #76736c;
+  --button-color: #3a5743;
+  --font-color: #e0ddcf;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* default nav bar style */
+.nav-default {
+  height: 115px;
+  background-color: var(--header-color);
+  position: relative;
+  top: -120px;
+}
+
+
+
+
+/* page.php style */
+.nav-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: var(--menu-font);
+  padding: 0.5rem 2rem;
+  z-index: 1;
+}
+
+.nav-bar a {
+  color: var(--font-color);
+}
+
+.nav-bar .shopping-cart:hover {
+    color: var(--button-color);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.main-nav {
+    padding: 0 1rem;
+}
+
+.main-nav li a {
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+.main-nav li {
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-main {
+    position: relative;
+    top: -80px;
+    text-align: center;
+}
+
+.about-main p {
+    width: 400px;
+    margin: auto;
+    text-align: start;
+    padding: 1rem 0;
+    font-family: var(--content-font);
+    font-weight: 32px;
+}
+
+.about-main h4 {
+    width: 400px;
+    margin: auto;
+    text-align: start;
+    padding: 1rem 0;
+    font-family: var(--subtitle-font);
+}
+
+.about-main h1 {
+    font-family: var(--title-font);
+    border-bottom: #76736c 2px dashed;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.about-main h3 {
+    font-family: var(--subtitle-font);
+}
+
+.about-main .give_notices .give_notice {
+    text-align: center;
+}
+
+
+
+/* page-home.php */
+.header-container {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  top: -120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--font-color);
+  font-family: var(--content-font);
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 1rem;
+  background: var(--button-color);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  width: 140px;
+  border-radius: 0.25rem;
+  z-index: 999;
+  text-align: center;
+}
+
+.menu .menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
+.menu-item a:hover {
+  color: var(--button-color);
+}
+
+.menu .sub-menu li {
+    padding: 0.5rem 0;
+
+  }
+
+.menu .sub-menu li:hover {
+    background-color: var(--header-color);
+}
+
+.menu .sub-menu li a:hover {
+  color: white;
+}
+
+.homepage-main {
+  position: relative;
+  top: -50px;
+}
+
+.homepage-main h1 {
+    text-align: center;
+    font-family: var(--title-font);
+}
+
+.homepage-main__p {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 2rem;
+    font-family: var(--content-font);
+}
+
+.homepage-banner {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.homepage-main .wp-block-media-text {
+    margin: auto;
+    padding: 2rem 2rem;
+}
+
+.homepage-main .wp-block-media-text:nth-child(6) {
+    background-color: rgb(232, 231, 231);
+    margin: 0;
+}
+
+.wp-block-media-text__content p a {
+    text-decoration: none;
+    font-family: var(--content-font);
+    color: black;
+}
+
+.wp-block-media-text__content p a:hover {
+    color: var(--button-color);
+}
+
+.homepage-main .wp-block-media-text__media:hover img{
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.wp-block-media-text__content p strong a {
+    font-family: var(--subtitle-font);
+}
+
+.header-content {
+  width: 300px;
+  position: absolute;
+  bottom: 2rem;
+  left: 7rem;
+}
+
+.news-section h1 {
+    padding: 0 2rem;
+    font-family: var(--title-font);
+}
+
+.news_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.news_link {
+  width: 25%;
+  height: 500px;
+  margin: 1rem;
+  padding: 1rem;
+  color: black;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.news_link:hover {
+    color: var(--button-color);
+    opacity: 0.8;
+}
+
+.news_link h3 {
+    font-family: var(--subtitle-font);
+}
+
+.news_link p {
+    font-family: var(--content-font);
+}
+
+.news_link img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+
+
+/* page-adoption.php */
+.adoption-container {
+    position: relative;
+    top: -80px;
+}
+
+.adoption-container h1 {
+    font-family: var(--title-font);
+  text-align: center;
+  border-bottom: #76736c 2px dashed;
+  padding: 1rem 0;
+}
+
+.adoption-content h3 {
+  padding: 0 6rem;
+  font-family: var(--title-font);
+}
+
+.adoption-content__paragraph {
+    display: flex;
+}
+
+.adoption-content__paragraph div {
+    width: 50%;
+    padding: 1rem 2rem;
+    border-bottom: #76736c 0.5px solid;
+    margin: 1rem 4rem;
+}
+
+.adoption-content__paragraph div h4 {
+    font-family: var(--subtitle-font);
+}
+
+.adoption-content__paragraph div p {
+    font-family: var(--content-font);
+}
+
+.adoption-section {
+    margin-top: 4rem;
+}
+
+.adoption-section h2 {
+  text-align: center;
+  font-family: var(--title-font);
+}
+
+.adoption-content img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.adoption_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.adoption_link {
+  width: 25%;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  color: black;
+  text-decoration: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.adoption_link h3 {
+    font-family: var(--subtitle-font);
+}
+
+.adoption_link p {
+    font-family: var(--content-font);
+}
+
+.adoption_link:hover {
+    color: #3a5743;
+    opacity: 0.8;
+}
+
+.adoption_link img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.adoption-button {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.adoption_link button {
+    background-color: var(--button-color);
+    color: var(--font-color);
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-family: var(--content-font);
+}
+
+.adoption_link button:hover {
+    background-color: var(--header-color);
+    color: white;
+}
+
+
+
+
+/* single.php */
+.single-section {
+    position: relative;
+    top: -80px;
+    text-align: center;
+}
+
+.single-section h1 {
+    font-family: var(--title-font);
+    border-bottom: #76736c 2px dashed;
+    padding: 1rem 0;
+}
+
+.single-section p, ul {
+    width: 400px;
+    margin: auto;
+    text-align: start;
+    font-family: var(--content-font);
+    padding: 1rem 0;
+}
+
+.single-section ul {
+    margin-bottom: 2rem;
+}
+
+.vlounteer-section h3, h3, h4{
+    font-family: var(--subtitle-font);
+    padding: 1rem 0;
+}
+
+.wp-block-button a {
+    border-radius: 10px;
+    color: #e0ddcf;
+    background-color: #3a5743;
+    font-family: var(--content-font);
+}
+
+.wp-block-button a:hover {
+    background-color: var(--header-color);
+    color: white;
+}
+
+.wp-block-media-text__media img{
+    width: 80%;
+}
+
+.give-submit-button-wrap input {
+    border-radius: 10px;
+    color: #e0ddcf;
+    background-color: #3a5743;
+    font-family: var(--content-font);
+}
+
+.give-submit-button-wrap input:hover {
+    background-color: var(--header-color);
+    color: white;
+}
+
+.give-form ul button {
+    border-radius: 10px;
+    color: #e0ddcf;
+    background-color: #3a5743;
+    font-family: var(--content-font);
+} 
+
+.give-form ul button:hover {
+    background-color: var(--header-color);
+    color: white;
+}
+
+.wp-block-media-text__content h2 {
+    font-family: var(--title-font);
+}
+
+
+
+
+
+/* single-news.php */
+.single-news-title {
+    text-align: center;
+    font-family: var(--title-font);
+    border-bottom: #76736c 2px dashed;
+    position: relative;
+    top: -80px;
+}
+
+.single-news-section img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    top: -80px;
+}
+
+.single-news-details {
+    text-align: center;
+}
+
+.single-news-details h2 {
+    font-family: var(--subtitle-font);
+    padding-bottom: 2rem;
+}
+
+.single-news-content p{
+    font-family: var(--content-font);
+    text-align: start;
+    width: 400px;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.share-section {
+    text-align: end;
+    padding: 3rem;
+}
+
+
+
+
+
+
+
+
+/* single-adoptions.php */
+.single-adoption-details {
+    text-align: center;
+    position: relative;
+    top: -80px;
+}
+
+.single-adoption-details h1 {
+    font-family:var(--title-font)
+}
+
+.single-adoption-content {
+    padding: 2rem 0;
+}
+
+.single-adoption-content h2, h3 {
+    font-family: var(--subtitle-font);
+}
+
+.single-adoption-content p {
+    width: 400px;
+    margin: auto;
+    text-align: start;
+    font-family: var(--content-font);
+    padding: 2rem 0;
+}
+
+.single-adoption-button button{
+    background-color: var(--button-color);
+    color: var(--font-color);
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-family: var(--content-font);
+}
+
+.single-adoption-button button:hover {
+    background-color: var(--header-color);
+    color: white;
+}
+
+
+
+
+
+
+
+/* footer.php */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 4em 0.5em 2em;
+  background-color: var(--header-color);
+  color: var(--font-color);
+  font-family: var(--content-font);
+}
+
+.footer-logo {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.footer h4 {
+  font-weight: 800;
+  margin: 0;
+}
+
+
+
+
+
+
+/* woocommerce.php */
+.woocommerce-main .woocommerce-result-count {
+    padding: 2rem;
+    font-family: var(--content-font);
+}
+
+.woocommerce-main .woocommerce-ordering {
+    padding: 2rem;
+}
+
+.woocommerce-main {
+    position: relative;
+    top: -80px;
+}
+
+.page-title {
+    text-align: center;
+    font-family: var(--title-font);
+    border-bottom: #76736c 2px dashed;
+    padding: 1rem 0;
+}
+
+.woocommerce-main .products ul, .woocommerce ul.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 2rem;
+    margin: auto;
+    text-align: center;
+}
+
+.woocommerce-main .products ul, .woocommerce ul.products a {
+    color: black;
+    font-size: 20px;
+}
+
+.woocommerce-main .products ul, .woocommerce ul.products a:hover {
+    opacity: 0.8;
+}
+
+.woocommerce-main .products li a.button {
+  background-color: var(--button-color);
+  color: var(--font-color);
+  font-family: var(--content-font);
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.woocommerce-main .products li a.button:hover {
+    background-color: var(--header-color);
+    color: white;
+}
+
+.woocommerce-main .product {
+    padding: 2rem;
+}
+
+.woocommerce div.product div.images img{
+    height: 500px;
+    object-fit: cover;
+}
+
+.woocommerce div.product div.summary {
+    margin-top: 6rem;
+}
+
+.woocommerce div.product div.summary h1 {
+    text-align: center;
+    font-family: var(--title-font);
+}
+
+.woocommerce-main .product .summary p, span {
+    font-family: var(--content-font);
+}
+
+.woocommerce-main .product .summary .cart .quantity input {
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.woocommerce div.product form.cart .button {
+    background-color: var(--button-color);
+  color: var(--font-color);
+  font-family: var(--content-font);
+  border-radius: 10px;
+}
+
+.woocommerce div.product form.cart .button:hover {
+    background-color: var(--header-color);
+    color: white;
+}
+
+.woocommerce-main .woocommerce-tabs h2 {
+    font-family: var(--title-font);
+}
+
+.woocommerce-main .woocommerce-tabs .hidden-xs h2{
+    font-family: var(--subtitle-font);
+}
+
+.woocommerce-main .woocommerce-tabs p {
+    font-family: var(--content-font);
+}
+
+.woocommerce-main .related .products {
+    text-align: center;
+}
+
+.woocommerce-main .text-color-standard ul{
+    margin: 0;
+    padding: 0 2rem;
+}
+
+.woocommerce-main .woocommerce-Tabs-panel ul {
+    margin: 0;
+    padding: 0 2rem;
+}
+
+.woocommerce .woocommerce-cart-form .shop_table thead tr{
+    font-family: var(--menu-font);
+}
+
+.woocommerce .woocommerce-cart-form .shop_table tbody tr {
+    font-family: var(--content-font);
+}
+
+.woocommerce .woocommerce-cart-form .shop_table tbody .product-remove a {
+    margin: auto;
+}
+
+.woocommerce .woocommerce-cart-form .shop_table tbody .product-thumbnail a img {
+    width: 100px;
+}
+
+.woocommerce .woocommerce-cart-form .shop_table tbody .actions .coupon {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.woocommerce .woocommerce-cart-form .shop_table tbody .actions .coupon button {
+    background-color: var(--button-color);
+  color: var(--font-color);
+  font-family: var(--content-font);
+  border-radius: 10px;
+}
+
+.woocommerce .woocommerce-cart-form .shop_table tbody .actions .coupon button:hover {
+    background-color: var(--header-color);
+    color: white;
+}
+
+.woocommerce .woocommerce-cart-form .shop_table tbody .actions button {
+    background-color: var(--button-color);
+  color: var(--font-color);
+  font-family: var(--content-font);
+  border-radius: 10px;
+}
+
+.woocommerce .woocommerce-cart-form .shop_table tbody .actions button:hover {
+    background-color: var(--header-color);
+    color: white;
+}
+
+.woocommerce .cart-collaterals .cart_totals {
+    float: none;
+    margin: auto;
+}
+
+.woocommerce .cart-collaterals .cart_totals h2 {
+    font-family: var(--title-font);
+}
+
+.woocommerce .cart-collaterals .cart_totals .shop_table th{
+    font-family: var(--subtitle-font);
+}
+
+.woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout a {
+    background-color: var(--button-color);
+  color: var(--font-color);
+  font-family: var(--content-font);
+  border-radius: 10px;
+}
+
+.woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout a:hover {
+    background-color: var(--header-color);
+    color: white;
+}
+
+.woocommerce .checkout_coupon p .button {
+    background-color: var(--button-color);
+  color: var(--font-color);
+  font-family: var(--content-font);
+  border-radius: 10px;
+}
+
+.woocommerce .checkout_coupon p .button:hover {
+    background-color: var(--header-color);
+    color: white;
+}
+
+.woocommerce .checkout_coupon p input {
+    padding: 0.5rem 0;
+}
+
+.woocommerce .woocommerce-checkout .col2-set .col-1 {
+    float: none;
+    margin: auto;
+}
+
+.woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields__field-wrapper .form-row{
+    width: 100%;
+}
+
+.woocommerce .woocommerce-checkout .col2-set .col-2 {
+    float: none;
+    margin: auto;
+}
+
+.woocommerce .woocommerce-checkout .shop_table {
+    width: 50%;
+    margin: auto;
+}
+
+.woocommerce .woocommerce-checkout #order_review #payment ul{
+    margin: auto;
+}
+
+.woocommerce .woocommerce-checkout #order_review #payment button {
+    float: none;
+    margin: auto;
+    background-color: var(--button-color);
+    color: var(--font-color);
+    font-family: var(--content-font);
+    border-radius: 10px;
+}
+
+.woocommerce .woocommerce-checkout #order_review #payment button:hover {
+    background-color: var(--header-color);
+    color: white;
+}
+
+.has-text-align-left {
+    position: relative;
+    top: -80px;
+    text-align: center;
+}
+
+.woocommerce-main .page-description {
+    font-family: var(--content-font);
+}
+
+
+@media screen and (max-width: 900px) {
+    .news_cards .news_link {
+        width: 350px;
+        height: 400px;
+        font-size: 14px;
+    }
+
+    .header-container {
+        height: 300px;
+    }
+
+    .header-content {
+        font-size: 13px;
+    }
+
+    .footer {
+        height: 120px;
+        font-size: 12px;
+    }
+
+    .footer p {
+        margin: 0;
+    }
+
+    .adoption-section .adoption_link {
+        width: 350px;
+        height: 380px;
+        font-size: 14px;
+    }
+
+    .adoption-section .adoption_link h3 {
+        margin: 0;
+    }
+
+    .adoption-section .adoption_link img {
+        height: 150px;
+    }
+
+    .adoption-content__paragraph div {
+        margin: 0
+    }
+
+    .single-adoption-content figure img {
+        height: 450px;
+        width: 300px;
+    }
+
+    .woocommerce-billing-fields {
+        padding: 0 1.5rem;
+    }
+
+    .col-2 {
+        padding: 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar a .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .main-nav ul {
+        width: 250px;
+    }
+
+    .main-nav ul li a {
+        font-size: 15px;
+        padding: 0
+    }
+
+    .shopping-cart i {
+        font-size: 18px;
+    }
+
+    .adoption-content__paragraph div p {
+        font-size: 13px;
+    }
+
+    .single-adoption-content figure img {
+        height: 300px;
+        width: 200px;
+    }
+
+    .single-adoption-content p {
+        font-size: 13px;
+    }
+}

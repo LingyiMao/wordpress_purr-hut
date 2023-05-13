@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cups Archives - Purr Hut</title>
+	<atom:link href="/product-category/cups/feed/" rel="self" type="application/rss+xml" />
+	<link>/product-category/cups/</link>
+	<description></description>
+	<lastBuildDate>Fri, 25 Nov 2022 01:29:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>Logo Cup</title>
+		<link>/product/logo-cup/</link>
+					<comments>/product/logo-cup/#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 25 Nov 2022 01:29:09 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=product#038;p=105</guid>
+
+					<description><![CDATA[<p>Warm hands and hearts with a custom mug that’s personalised with special photos, messages or designs.</p>
+<p>The post <a rel="nofollow" href="/product/logo-cup/">Logo Cup</a> appeared first on <a rel="nofollow" href="/">Purr Hut</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<div class="hidden-xs hidden-sm">
+<h2 class="mb-0 text-color-standard">Add a smile to morning coffee, afternoon tea or evening hot chocolate.</h2>
+</div>
+<div class="text-color-standard">
+<ul>
+<li>325 ml size</li>
+<li>Durable ceramic mug</li>
+<li>8 colour options for handle &amp; interior</li>
+<li>Vivid, full-colour photo printing</li>
+</ul>
+<p>Ready to brighten up your beverages? Now you can design a mug that showcases a special message, favourite photo or business logo. Our durable ceramic printed mugs come in a classic white shade with options to choose a fun colour for your handle and interior.</p>
+<p>To start creating your personalised mugs, explore our gallery of fully customisable design options. Once you’ve found a favourite photo mug, make it yours by adding your custom details and choosing the options that work best for you. We’ll take care of the rest, using our high-quality printing to create a personalised cup that will look great and make your loved ones smile.</p>
+</div>
+<p>The post <a rel="nofollow" href="/product/logo-cup/">Logo Cup</a> appeared first on <a rel="nofollow" href="/">Purr Hut</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/product/logo-cup/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
